@@ -1,0 +1,260 @@
+.admin_profile {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 20px;
+}
+
+.admins_list,
+.add_admin {
+  width: 50%;
+}
+
+.admins_list,
+.add_admin {
+  border-radius: 20px;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0px 1px 16px 3px rgba(56, 172, 255, 0.25);
+}
+
+.admin_list_header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+}
+
+.admin_list_header img {
+  width: 80px;
+  height: 80px;
+}
+
+.admin_list_header h5 {
+  color: #444;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.admin_list_header p {
+  color: #979797;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 184.615% */
+}
+
+.admins_list hr {
+  color: #ededed;
+  margin: 20px 0;
+}
+
+.admin_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.admin_name {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.inner_admin_name p {
+  color: #444;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.inner_admin_name span {
+  color: #979797;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 184.615% */
+}
+
+.admin_info button {
+  border-radius: 16.003px;
+  border: 1.6px solid #0095ff;
+  background-color: #fff;
+  outline: none;
+  color: #0095ff;
+  font-family: Open Sans;
+  font-size: 11.202px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20.483px; /* 182.857% */
+  cursor: pointer;
+  padding: 10px 30px;
+  box-shadow: 0px 5.12084px 10.24167px 0px rgba(250, 116, 54, 0.16);
+}
+
+.log_out {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.log_out h4 {
+  color: #444;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.add_admin_header h4 {
+  color: #444;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.add_admin_header p {
+  color: #979797;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 184.615% */
+}
+
+.add_admin_form {
+  margin-top: 40px;
+}
+
+.inner_add_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner_add_form label {
+  color: #666;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.015px; /* 205.638% */
+}
+
+.inner_add_form input {
+  margin-top: 5px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 1px 75px 2px rgba(0, 0, 0, 0.06);
+  padding: 15px 30px;
+  color: #979797;
+  border: none;
+  outline: none;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.add_admin_form button {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  border-radius: 20px;
+  background: #38acff;
+  box-shadow: 0px 8px 16px 0px rgba(250, 116, 54, 0.16);
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .admin_profile {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 50px;
+  }
+  .admins_list,
+  .add_admin {
+    width: 100%;
+  }
+}
+
+/* Small Screens */
+@media screen and (max-width: 640px) {
+  .admins_list,
+  .add_admin {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .admin_profile {
+    row-gap: 30px;
+    margin-bottom: 50px;
+  }
+  .admin_name img{
+    display: none;
+  }
+  .admins_list,
+  .add_admin {
+    padding: 30px 20px;
+  }
+  .admin_list_header h5 {
+    font-size: 16px;
+  }
+
+  .admin_list_header p {
+    line-height: 16px;
+  }
+  .inner_admin_name p {
+    font-size: 13px;
+  }
+
+  .inner_admin_name span {
+    line-height: 16px; /* 184.615% */
+  }
+  .admin_info button {
+    padding: 10px 20px;
+  }
+  .log_out h4{
+    font-size: 13px;
+  }
+
+  .add_admin_header h4 {
+    font-size: 13px;
+  }
+  
+  .add_admin_header p {
+    font-size: 11px;
+  }
+  .add_admin_form {
+    margin-top: 20px;
+  }
+  .inner_add_form label{
+    font-size: 13px;
+  }
+  .inner_add_form input {
+    font-size: 11px;
+    padding: 10px;
+  }
+  .add_admin_form button{
+    font-size: 13px;
+  }
+}

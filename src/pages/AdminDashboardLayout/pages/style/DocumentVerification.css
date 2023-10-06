@@ -1,0 +1,169 @@
+.document_page {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  column-gap: 50px;
+}
+
+.left_document,
+.right_document {
+  width: 50%;
+}
+
+.left_document {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.document_search {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 2px 80px 2px rgba(0, 0, 0, 0.06);
+  padding: 20px 50px;
+  width: 100%;
+}
+
+.document_search input {
+  color: #979797;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.schools_license {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.schools_license span {
+  color: #a4a4a4;
+  text-align: right;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.034px; /* 158.614% */
+}
+
+.inner_school_license {
+  display: flex;
+  column-gap: 10px;
+}
+
+.inner_school_license h4 {
+  color: #444;
+  font-family: Raleway;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.inner_school_license p {
+  color: #979797;
+  font-family: Open Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 184.615% */
+}
+
+.schools_license button {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25.6px; /* 182.857% */
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background: #38acff;
+  padding: 0 30px;
+  cursor: pointer;
+  box-shadow: 0px 6.4px 12.8px 0px rgba(250, 116, 54, 0.16);
+}
+
+.right_document {
+  padding: 0 20px;
+  padding-bottom: 20px;
+  height: fit-content;
+  border-radius: 20px;
+  background: #f5f5f5;
+}
+
+.inner_message {
+  width: 318px;
+  height: fit-content;
+  margin-top: 50px;
+  border-radius: 16px 16px 16px 0px;
+  background: #fff;
+  padding: 20px;
+}
+
+.inner_message p {
+  margin-bottom: 30px;
+}
+
+/* Medium Screens */
+@media (max-width: 1024px) {
+  .document_page {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 50px;
+  }
+  .left_document,
+  .right_document {
+    width: 100%;
+  }
+}
+
+/* Small Screens */
+@media screen and (max-width: 640px) {
+  .left_document,
+  .right_document {
+    width: 98%;
+    margin: 0 auto;
+  }
+  .document_search input {
+    font-size: 14px;
+  }
+  .schools_license {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .inner_school_license h4,
+  .school_docs_name h4 {
+    font-size: 16px;
+  }
+  .inner_school_license p,
+  .school_docs_name p {
+    font-size: 13px;
+    line-height: 37.015px;
+  }
+  .schools_license button {
+    width: fit-content;
+    padding: 10px 30px;
+  }
+  .inner_message {
+    margin-top: 20px;
+    padding: 10px;
+    color: #172b47;
+    font-family: DM Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.39px;
+  }
+}

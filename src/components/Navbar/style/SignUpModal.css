@@ -1,0 +1,152 @@
+.sign_up_overlay {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign_up_cancel {
+  margin-left: 55vw;
+}
+
+.sign_up_container {
+  display: flex;
+  align-items: center;
+  width: 55%;
+  margin: 0 auto;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px -1px 1px 0px rgba(122, 200, 255, 0.25);
+}
+
+.sign_up_container .left_sign_up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 20px;
+  width: 50%;
+  padding: 50px;
+}
+
+.left_sign_up h3 {
+  color: #222;
+  font-family: Raleway;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.left_sign_up h1 {
+  color: #222;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.left_sign_up span {
+  color: #dda01d;
+}
+
+.signup_buttons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.signup_buttons button {
+  width: 100%;
+  outline: none;
+  font-family: Open Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 10px 30px;
+  box-shadow: 0px 1px 75px 25px rgba(0, 0, 0, 0.06);
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.signup_buttons .school_owner {
+  border: 2px solid #38acff;
+  background: #fff;
+  color: #0095ff;
+}
+
+.signup_buttons .school_finder {
+  border: 2px solid #38acff;
+  background: #38acff;
+  color: #fff;
+}
+
+.sign_up_container .right_sign_up {
+  width: 50%;
+  background: url(../images/SignUp.png), lightgray 50% / cover no-repeat;
+  background-position: center center;
+  height: 100%;
+}
+
+/* responsiveness starts here */
+@media (max-width: 1280px) {
+  .sign_up_cancel {
+    margin-left: 60vw;
+  }
+  .sign_up_container {
+    width: 60%;
+  }
+}
+
+/* responsiveness starts here */
+@media (max-width: 1024px) {
+  .sign_up_cancel {
+    margin-left: 80vw;
+  }
+  .sign_up_container {
+    width: 80%;
+  }
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .sign_up_cancel {
+    margin-left: 90vw;
+  }
+  .sign_up_container {
+    width: 95%;
+  }
+}
+
+/* Small Screens */
+@media screen and (max-width: 640px) {
+  .sign_up_header img {
+    width: 19.561px;
+    height: 19.561px;
+  }
+  .sign_up_header h3 {
+    font-size: 12px;
+  }
+  .sign_up_container .left_sign_up{
+    padding: 30px 10px;
+  }
+  .sign_up_container .left_sign_up h1 {
+    font-size: 16px;
+  }
+  .signup_buttons button{
+    font-size: 12px;
+    width: 100%;
+    padding: 10px 20px;
+  }
+}

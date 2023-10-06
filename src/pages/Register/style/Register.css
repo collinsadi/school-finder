@@ -1,0 +1,215 @@
+.register {
+  display: flex;
+  margin: 100px auto;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  background: #fefcfb;
+}
+
+.register_container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.ecllipse {
+  width: 100%;
+}
+
+.register_header {
+  margin: 20px 0;
+  margin-bottom: 30px;
+}
+
+.register_header img {
+  width: auto;
+}
+
+.register_header h1 {
+  color: #222;
+  font-family: Raleway;
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.inner_form {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.input_content {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 1px 75px 25px rgba(0, 0, 0, 0.06);
+}
+
+.input_content input {
+  width: 100%;
+  padding: 13px 10px;
+  color: #666;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  outline: none;
+}
+
+.school_website {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 1px 75px 25px rgba(0, 0, 0, 0.06);
+}
+
+.school_website input {
+  width: 100%;
+  padding: 13px 10px;
+  color: #666;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  outline: none;
+}
+
+.upload_cert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1.5px dashed #38acff;
+  background: #fdfbfb;
+  box-shadow: 0px 1px 75px 25px rgba(0, 0, 0, 0.06);
+}
+
+.upload_cert p {
+  color: #979797;
+  font-family: Open Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.upload_cert span {
+  color: #0095ff;
+}
+
+.register_form button {
+  margin: 20px auto;
+  width: 100%;
+  border-radius: 20px;
+  background: #38acff;
+  box-shadow: 0px 1px 75px 25px rgba(0, 0, 0, 0.06);
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 20px;
+}
+
+
+
+.login_route {
+  margin-top: 20px;
+  text-align: center;
+  color: #222;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px; /* 190% */
+}
+.login_route span {
+  color: #0095ff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Responsiveness starts here */
+@media (max-width: 1024px) {
+  .register_container {
+    width: 60%;
+  }
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .register {
+    margin: 50px auto;
+  }
+  .register_container {
+    width: 75%;
+  }
+}
+
+/* Small Screens */
+@media screen and (max-width: 640px) {
+  .register_container {
+    width: 95%;
+  }
+  .ecllipse{
+    display: none;
+  }
+  .register_header {
+    text-align: center;
+  }
+  .register_header img {
+    width: 50%;
+  }
+  .register_header h1 {
+    font-size: 25px;
+  }
+  .inner_register_form {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+  .input_content input,.school_website input {
+    font-size: 13px;
+  }
+  .upload_cert{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .upload_cert input{
+    text-align: center;
+  }
+  .upload_cert p{
+    font-size: 13px;
+  }
+  .register_form button{
+    font-size: 13px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  .login_route {
+    font-size: 13px;
+  }
+}

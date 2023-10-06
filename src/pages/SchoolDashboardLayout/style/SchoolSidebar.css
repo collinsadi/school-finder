@@ -1,0 +1,53 @@
+.school_sidebar {
+  width: 10%;
+}
+
+.menu_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  padding: 50px 20px;
+  border-radius: 50px;
+  background: #fff;
+  box-shadow: 0px 4px 19px -9px rgba(0, 0, 0, 0.25);
+}
+
+.side_items img{
+  padding: 10px 12px;
+}
+
+.side_items:hover,.side_items:focus{
+  background-color: #C8E8FF;
+  border-radius: 50%;
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .school_sidebar {
+    width: 15%;
+  
+  }
+}
+
+ /* Small Screens */
+ @media screen and (max-width: 640px) {
+  .school_sidebar{
+    width: 100%;
+  }
+  .menu_box{
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+  }
+  .side_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .side_items img{
+    padding: 12px 8px;
+    width: 80%;
+  }
+ }

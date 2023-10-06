@@ -1,0 +1,83 @@
+.profile_dash {
+  width: 100%;
+}
+
+.profile_dash_header h1 {
+  color: #666;
+  font-family: Raleway;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.profile_hero {
+  margin-top: 20px;
+}
+
+.profile_hero img {
+  width: 100%;
+}
+
+.profile_hero_info {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  position: relative;
+  padding-left: 20px;
+  bottom: 50px;
+}
+
+.profile_hero_info img {
+  width: 147.556px;
+  height: 144px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.profile_info_content {
+  margin-top: 50px;
+}
+
+.profile_info_content h3 {
+  color: #444;
+  font-family: Raleway;
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.profile_info_content p {
+  color: #666;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37.015px; /* 205.638% */
+}
+
+/* Medium Screens */
+@media (max-width: 991px) {
+  .profile_dash_header h1 {
+    font-size: 16px;
+  }
+  .profile_hero_info img {
+    width: 63.531px;
+    height: 62px;
+  }
+  .profile_info_content h3{
+    font-size: 20px;
+  }
+  .profile_info_content p{
+    font-size: 10px;
+    line-height: 15.937px;
+  }
+}
+
+ /* Small Screens */
+ @media screen and (max-width: 640px) {
+  .profile_dash_header{
+    text-align: center;
+  }
+ }
