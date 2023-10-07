@@ -57,14 +57,14 @@ const SchoolInfo = () => {
       <div className="school_info">
       <div className="left_school_info">
         <div className="school_name_header">
-          <img src={SchoolLogo} alt="Logo" />
+          <img src={school[0].registrationDocs.url} alt="Logo" />
           <div className="school_name">
                 <h1>{ school[0].name} </h1>
             <p>{ school[0].type ? school[0].type : "" }</p>
           </div>
         </div>
         <div className="school_hero">
-          <img src={SchoolHero} alt="hero image" />
+          <img src={school[0].registrationDocs.url} alt="hero image" />
         </div>
         <div className="school_price">
           <div className="left_school_price">

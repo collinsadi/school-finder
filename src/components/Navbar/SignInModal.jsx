@@ -58,7 +58,7 @@ setIsLoading(true)
       localStorage.setItem("name",data.school.name)
       localStorage.setItem("phone",data.school.phone)
       localStorage.setItem("website",data.school.website)
-      localStorage.setItem("image",data.school.registrationDocs)
+      localStorage.setItem("image",data.image.url)
       navigate("/dashboard/school_profile");
     }
     

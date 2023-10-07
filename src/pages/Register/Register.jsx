@@ -36,7 +36,6 @@ const Register = () => {
 
   const navigate = useNavigate();
 
-
   const createSchool = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
