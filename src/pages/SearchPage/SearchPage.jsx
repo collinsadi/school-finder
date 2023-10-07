@@ -12,7 +12,12 @@ import { apiUrl } from "../../config";
 const SearchPage = () => {
   const [search, setSearch] = useState("")
 
+  const [schools, setSchools] = useState(null)
+
+
   const handleSearch = async () => {
+
+
     
     const response = await fetch(apiUrl + "/search?where=location&keyword="+search, {
       method: "GET",
@@ -22,8 +27,10 @@ const SearchPage = () => {
     })
 
     const data = await response.json()
+    console.log(data)
+    setSchools(data.schools)
 
-    alert(data.message)
+    // alert(data.message)
 
   }
 
@@ -31,7 +38,7 @@ const SearchPage = () => {
     <main className="search_page">
       <SearchNav/>
       <SearchBox handleSearch={handleSearch} setSearch={setSearch} search={search} />
-      <SearchDetail/>
+      <SearchDetail schools={schools} setSchools={setSchools} />
     </main>
   )
 }

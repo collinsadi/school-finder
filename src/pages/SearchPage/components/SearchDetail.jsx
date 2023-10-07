@@ -16,9 +16,8 @@ import Location from "../images/Location.svg";
 import Price from "../images/Price.svg";
 import { apiUrl } from "../../../config";
 
-const SearchDetail = () => {
+const SearchDetail = ({schools, setSchools}) => {
 
-  const [schools, setSchools] = useState(null)
 
   
 
@@ -147,7 +146,7 @@ const SearchDetail = () => {
           {schools && schools.map((school) => (
             <div className="school_card" key={school._id}>
               <div className="left_school_card">
-                <img src={school.registrationDocs ? school.registrationDocs : SchoolImage} alt="SchoolImage" />
+                <img src={SchoolImage} alt="SchoolImage" />
               </div>
               <div className="right_school_card">
                 <div className="school_card_top">
